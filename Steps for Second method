@@ -1,0 +1,30 @@
+Stepts for how to configure Node(slave server of Jenkins)
+Go to Jenkins
+Click on Manage Jenkins
+Before configuring we have enable the Agent fixed and give the port number first (you must allow the port number which you give here in inbound rules)
+to enable the Agent fixed after go to manage jenkins 
+click on Security then
+if you scroll down you will get the option called Agent
+in Agent click on check box Fixed and give the port number as your wish
+Click on Save
+Now go to the Node 
+Click on New Node and then Give the details given below
+Name== Any Name
+
+Description==Any descrption
+
+Number of executors==2
+
+Remote root directory== Your slave directory where you to save the job with path
+
+Labels==Any Name
+
+Usage==Use this node as much as possible
+
+Launch method==Launch agent by connecting it to the controller
+
+Availability==Keep this agent online as much
+
+Click on Save
+
+
