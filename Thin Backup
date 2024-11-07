@@ -16,4 +16,4 @@ Now go to *Manage Jenkins*.
 Scroll Down.
 clk on *Think Backup*
 clk on *Backup Now*
-The given Directory will be stored the Backup of the Jenkins.
+The given Directory will be stored the Backup of the Jenkins.(cd /opt/directory name which you geven in Thinbackup configuration).
