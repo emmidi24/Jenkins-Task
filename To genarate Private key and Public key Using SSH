@@ -1,0 +1,38 @@
+Configuring the Slave Node using ssh key
+1.	First Loging to the Jenkins server.
+2.	update the packages of server(apt update).
+3.	Make sure that you must be in ubunto user.
+4.	Give the Command called (ssh-keygen) and Enter
+5.	It will genarate private key  as a (id_ed25519) and Public key as a(id_ed25519.pub) in .ssh directory
+6.	Go to the .ssh directory and copy the genarated Public key(id_ed25519.pub).
+7.	Go to the .ssh dirctory in Jenkins slave server Paste the Public key in authorized_keys file(using vi authorized_keys).
+8.	Make sure that you must paste the Public key(id_ed25519.pub) in Ubunto user not in root user.
+9.	Now to Loging to Jenkins.
+10.	Go to the DashBoard---Manage Jenkins---Nodes---New Nodes.
+11.	Create new Node.
+12.	Name==Any name
+13.	Description===Any description
+14.	Number of executors== Your wish of executors
+15.	Remote root directory==/home/ubuntu(give the Directory path were you want create workspaces.)
+16.	Labels===Any name
+17.	Usage==Only build jobs with label expressions matching this node
+18.	Launch method===Launch agents via SSH
+19.	Here You have to give Credentails deatails Given Below.
+20.	Host==Public IP adress of Server
+21.	Credentials--clk on Add--clk on Jenkins.
+22.	Domain==Global credentials (unrestricted)
+23.	Kind==SSH Username with private key
+24.	Scope==Global (Jenkins, nodes, items, all child items, etc)
+25.	ID==Any Id
+26.	Description==Any Description.
+27.	Username==Ubuntu (in which user your server is.)
+28.	Treat username as secret(empty ckeck box).
+29.	Private Key---clk on check box Enter directly.
+30.	*Paste the Private Key(id_ed25519) Which is genareted from Jenkins Master server *
+31.	Clk on ---Add
+32.	Host Key Verification Strategy==Known hosts file Verification Strategy
+33.	Availability==Keep this agent online as much as possible.
+34.	clk on ---Save
+35.	Now you have to create the Job.
+36.	If you selected the Item as a pipeline so you have to give the agent as node name which you created. or if you selected freesytle automecticaly selects the Active Node.
+37.	The Job will be stored in jenkins slave server which you the path in Remote directory as Workspace. 
