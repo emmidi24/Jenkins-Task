@@ -33,6 +33,7 @@ Configuring the Slave Node using ssh key
 32.	Host Key Verification Strategy==Known hosts file Verification Strategy
 33.	Availability==Keep this agent online as much as possible.
 34.	clk on ---Save
-35.	Now you have to create the Job.
-36.	If you selected the Item as a pipeline so you have to give the agent as node name which you created. or if you selected freesytle automecticaly selects the Active Node.
-37.	The Job will be stored in jenkins slave server which you the path in Remote directory as Workspace. 
+35. Node Configuration Done 
+36.	Now you have to create the Job.
+37.	If you selected the Item as a pipeline so you have to give the agent as node name which you created. or if you selected freesytle automecticaly selects the Active Node.
+38.	The Job will be stored in jenkins slave server which you the path in Remote directory as Workspace. 
