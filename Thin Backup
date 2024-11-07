@@ -1,0 +1,19 @@
+Thin Backup==It is Mainly used for take Backup (the global and job specific configurations) or Job, Plugins and Other Configuration in Jenkins.
+First Loging to Jenkins.
+Then we have to Install the Plugin called **Thin Backup**
+To Install Plugin Go to the Manage Jenkins---Plugins---clk on Availabel plugins--- in search box clk Thin backup you will the Thin backup and clk on Install.
+After Installation your jenkins will resatrt.
+After that We have to Configure the ThinBackup in Jenkins.
+To Configure Go to *DashBoard*.
+clk on *Manage Jenkins*.
+clk on *System Configuration*.
+Scroll Down.
+You will get the Option called *ThinBackup Configuration*.
+Give the deatiles as given below.
+Backup Directory==Path of the directory in which you to take back up(Created directory must be in /opt directory).
+Select all the check box and Clk on Save.
+Now go to *Manage Jenkins*.
+Scroll Down.
+clk on *Think Backup*
+clk on *Backup Now*
+The given Directory will be stored the Backup of the Jenkins.
