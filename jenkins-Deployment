@@ -1,0 +1,29 @@
+Jenkins Deployment
+First in the backend we have to take saparate server for each tool(like *jenkins, Sonarqube and Nexus For sapparetly*).
+For jenkins server we can take Instance type as a (t2.micro).
+For Sonarqube we must take Instance type as a *t2.medium*.
+Where for Nexus also the Instance type as a *t2.medium*.
+For Sonarqube and Nexus we have take sapparate users(*we have to install our sonarqube and nexus in the added user).
+After this we have to run our nexus and sonarqube.
+Now Login to jenkins.
+Go to jenkins--Create New job.
+Select the Job as a Pipeline.
+Now Configuer the pipeline using pipeline script(Groovy script).
+First we have to clone our code from git.
+To clone we have Scroll down--clk on pipeline syntax--select the Artifactor as *git.github*.
+Then enter the URL of the Source code from github.
+Then scroll down--clk on--pipeline syntax genarator.
+Copy the Genarated syntax and paste in pipeline script.
+Now to Build the code we have to install maven in jenkins server.
+Again go pipeline syntax--select the Artifactor as *shell.Script*.
+Here you will get the Pipeline syntax.
+Copy and paste the syntax in pipeline script.
+Now Save and Build the code.
+After successful of code Proced the Sonarqube.
+To do sonarqube we have firtst install the sonarqube scannar in plugins.
+To install the sonarqube Plugin Go to *Manage Jenkins---clk on *Plugins*---clk on *Availabel plugins*.
+In search box search as sonarqube you will get the sonarqube scanner and the clk on check box and install.
+After installing you will get massage as restart or Go back.
+Go back and Search for nexus Artifactor
+
+  
