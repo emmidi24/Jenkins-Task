@@ -24,6 +24,41 @@ To do sonarqube we have firtst install the sonarqube scannar in plugins.
 To install the sonarqube Plugin Go to *Manage Jenkins---clk on *Plugins*---clk on *Availabel plugins*.
 In search box search as sonarqube you will get the sonarqube scanner and the clk on check box and install.
 After installing you will get massage as restart or Go back.
-Go back and Search for nexus Artifactor
+Go back and Search for nexus Artifactor and install nexus Artifactor uplodar.
+Now restart the jenkins.
+Now go back to the Backend of the Sonarqube, satrt the sonaqube and Login in sonarqube console using port number *9000*.
+Give *users*--admin, Password--admin.
+Now create your own password.
+Now loging the jenkins.
+Now configure the Sonarqube in job.
+Go to *Configure*---clk on *Pipleline syntax*---now select the sonarqube environment Scanner.
+Give the *Host(URL of the sonarqube).
+Now Give the credentional: clk on *Add*--*user name*=select *User name and Secrete text*.
+Go to the Sonarqube Console: *My Account*---clk on *Security*---Give any name and clk on Genarate. Here you will get the Secrete.
+Copy the Secrete text and paste in the Jenkins Credentional(*Secrete text==Paste the copied secrete text from sonarqube).
+Now clk on Add.
+Now clk on Pipeline syntax genarate.
+Copy the syntax and paste in pipeline script and Save and clk on Build Now.
+After Sonarqube get Successful. You will get the Code details in sonaqube console(whether it as any bugs and syntax error).
+Now go to the Nexus Console and Creat one repository.
+Now folow the same step as sonarqube but in the Artifctor selecto the nexus Artifact uploader.
+Now give the Versioin Nexus3 and Give the Creadentional of your nexus.
+Now clk on Genaret pipeline syntax and copy the syntax.
+Paste the syntax and clk on Save.
+After successful go to the Nexus. Here In nexus you will get Source code in the repository which you created.
+Now you have to depoly your Source code.
+Install the Tomcat in the backend in jenkins and Change the port number as your wish.
+Now start the tomcat server and go to the Console and Give the creadentional, Login.
+Now Go to the jenkins.
+In Jenkins go to the Plugins search as a deploy as a contenor and Restart the jenkins.
+Now Go to configure and clk on pipesyntax genarator and select deploy adapters.
+Now Copy the url from the tomcat server and paste it in Host Box.
+Now Add the credentional of the tomcat and clk on add.
+Click on genarate pipeline syntax.
+Copy and paste the syntax in Script and Save.
+Click on Build.
+In tomcat Console click on file which you uploaded in the Jenkins.
+Now you will the Final Output.
+
 
   
